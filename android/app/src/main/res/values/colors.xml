@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy">#0B1F3A</color>
+    <color name="navy_deep">#071426</color>
+    <color name="gold">#C9A227</color>
+    <color name="gold_light">#E8C96A</color>
+    <color name="teal_med">#0E9A8B</color>
+    <color name="teal_light">#2EC4B6</color>
+    <color name="bg_light">#F6F8FB</color>
+</resources>
