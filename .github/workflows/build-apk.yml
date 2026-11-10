@@ -1,7 +1,5 @@
 name: Build PT Study Zone APK
 
-# يبني نسخة APK جاهزة للتثبيت كل مرة ترفع فيها كود جديد
-# Build a ready-to-install APK on every push
 on:
   push:
     branches: [ main, master ]
@@ -20,16 +18,15 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+      - name: Accept Android SDK licenses and install required packages
+        run: |
+          yes | "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" --licenses || true
+          "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" "platform-tools" "platforms;android-34" "build-tools;34.0.0"
 
       - name: Set up Gradle 8.7
         uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: '8.7'
-
-      - name: Make gradlew executable (if present)
-        run: chmod +x android/gradlew || true
 
       - name: Build debug APK
         working-directory: android
