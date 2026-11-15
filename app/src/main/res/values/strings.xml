@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PT Study Zone</string>
+    <string name="offline_title">لا يوجد اتصال بالإنترنت</string>
+    <string name="offline_message">تأكد من اتصالك بالإنترنت ثم حاول مرة أخرى.</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="downloading">جارٍ تنزيل الملف من PT Study Zone</string>
+    <string name="download_started">بدأ تنزيل %1$s</string>
+    <string name="download_failed">تعذّر بدء التنزيل</string>
+    <string name="still_offline">ما زلت غير متصل بالإنترنت</string>
+    <string name="no_file_app">لا يوجد تطبيق لاختيار الملفات</string>
+    <string name="no_app_to_open">لا يوجد تطبيق لفتح هذا الرابط</string>
+</resources>
